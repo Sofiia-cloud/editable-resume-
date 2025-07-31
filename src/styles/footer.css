@@ -1,0 +1,21 @@
+.resume-footer {
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+#download-btn {
+  background-color: var(--secondary-color-green);
+  color: var(--text-color-white);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s;
+}
+
+#download-btn:hover {
+  background-color: var(--text-color-darkgreen);
+}

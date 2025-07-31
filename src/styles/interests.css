@@ -1,0 +1,47 @@
+.resume-section#interests {
+  background-color: var(--primary-color-grey);
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  width: 267px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.resume-section#interests h3 {
+  color: var(--text-color-black);
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 12px 0;
+}
+
+.interests-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.interest-chip {
+  background-color: var(--bg-color-white);
+  border-radius: 12px;
+  padding: 6px 12px;
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--text-color-black);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  word-break: break-word;
+  white-space: nowrap;
+  height: 23px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .resume-section#interests {
+    width: 100%;
+    height: auto;
+    min-width: 0;
+    max-width: 100%;
+  }
+}

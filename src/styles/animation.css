@@ -1,0 +1,30 @@
+[data-ripple] {
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.ripple-effect {
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--ripple-color, rgba(0, 0, 0, 0.1));
+  transform: scale(0);
+  animation: ripple 600ms linear;
+  pointer-events: none;
+  opacity: 1;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+.resume-section {
+  transition: transform 0.3s ease;
+}
+
+.resume-section:hover {
+  transform: translateY(-2px);
+}

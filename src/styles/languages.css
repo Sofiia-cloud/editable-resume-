@@ -1,0 +1,71 @@
+.resume-section#languages {
+  background-color: var(--primary-color-grey);
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  width: 267px;
+  height: 124px;
+  gap: 16px;
+  padding: 8px 16px 8px 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.resume-section#languages h3 {
+  color: var(--text-color-black);
+  font-size: 14px;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+.languages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  height: calc(124px - 44px);
+}
+
+.language-item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  align-items: center;
+  gap: 17px;
+  min-height: 11px;
+  padding: 2px;
+}
+
+.language-name {
+  font-weight: 500;
+  color: var(--text-color-black);
+  font-size: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bar-container {
+  flex-grow: 1;
+  height: 11px;
+  border-radius: 3px;
+  overflow: hidden;
+  gap: 17px;
+}
+
+.bar {
+  height: 100%;
+  background: var(--secondary-color-green);
+  border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  .resume-section#languages {
+    width: 100%;
+    height: auto;
+    min-height: 124px;
+    padding: 12px;
+    max-width: 100% !important;
+  }
+
+  .languages-list {
+    height: auto;
+  }
+}

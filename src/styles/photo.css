@@ -1,0 +1,34 @@
+.resume-section#photo {
+  background-color: var(--primary-color-grey);
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  width: 124px;
+  height: 124px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .resume-section#photo {
+    width: 124px;
+    height: 124px;
+    margin: 0 auto 1rem;
+  }
+}

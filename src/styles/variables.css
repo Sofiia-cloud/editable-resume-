@@ -1,0 +1,18 @@
+:root {
+  --primary-color-grey: rgba(240, 240, 240, 1);
+  --secondary-color-green: rgba(40, 217, 121, 1);
+  --text-color-black: rgba(0, 0, 0, 1);
+  --text-color-white: rgba(255, 255, 255, 1);
+  --text-color-darkgreen: rgba(20, 144, 99, 1);
+  --bg-color-white: rgba(255, 255, 255, 1);
+  --border-color: #e1e1e1;
+  --border-dark: #333;
+  --success-color: #28a745;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  --info-color: #17a2b8;
+  --ripple-color: rgba(100, 255, 144, 0.7);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+  --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+}

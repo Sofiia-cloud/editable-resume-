@@ -1,0 +1,39 @@
+.resume-section#contact {
+  background-color: var(--text-color-black);
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  width: 267px;
+  height: 92px;
+  padding: 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.resume-section#contact h3 {
+  color: var(--text-color-white);
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+#contact a {
+  color: rgba(221, 221, 221, 1);
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 400;
+  display: inline-block;
+  margin-top: -10px;
+  transition: color 0.2s;
+}
+
+@media (max-width: 768px) {
+  .resume-section#contact {
+    width: 100%;
+    height: auto;
+    min-width: 0;
+    max-width: 100%;
+  }
+}

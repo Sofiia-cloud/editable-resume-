@@ -1,0 +1,121 @@
+.resume-section#experience {
+  background-color: var(--primary-color-grey);
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  width: 411px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.resume-section#experience h3 {
+  color: var(--text-color-black);
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 12px 0;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.experience-square {
+  background-color: var(--bg-color-white);
+  border-radius: 10px;
+  padding: 12px;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  align-items: start;
+  gap: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  width: 100%;
+}
+
+.experience-left-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.experience-right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 19px;
+}
+
+.experience-square.small .experience-right-col {
+  margin-top: 0;
+}
+
+.experience-period {
+  font-size: 8px;
+  color: var(--text-color-black);
+  font-weight: 500;
+  margin: 0 0 3px 0;
+}
+
+.experience-title {
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--text-color-black);
+  margin: -3px 0 0 0;
+}
+
+.experience-company {
+  font-size: 8px;
+  font-weight: 400;
+  color: var(--text-color-black);
+  margin: -7px 0 0 0;
+}
+
+.experience-items {
+  font-size: 8px;
+  font-weight: 400;
+  padding-left: 12px;
+  margin: 0;
+  list-style-position: outside;
+}
+
+.experience-item {
+  margin: 0 0 0.1px 0;
+  line-height: 1.3;
+  position: relative;
+  padding-left: 8px;
+}
+
+.experience-square.small {
+  background-color: var(--secondary-color-green);
+}
+
+.experience-square.small .experience-period,
+.experience-square.small .experience-title,
+.experience-square.small .experience-company,
+.experience-square.small .experience-item {
+  color: var(--bg-color-white);
+}
+
+.experience-square.small .experience-tag {
+  font-size: 8px;
+  font-weight: 500;
+  background-color: rgba(126, 115, 18, 0.4);
+  color: rgba(221, 241, 99, 1);
+  border-radius: 12px;
+  padding: 2px 6px;
+  display: inline-block;
+  white-space: nowrap;
+  margin: 0 0 4px auto;
+  width: min-content;
+}
+
+@media (max-width: 768px) {
+  .experience-square {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+  
+  .experience-right-col {
+    margin-top: 4px;
+  }
+}
